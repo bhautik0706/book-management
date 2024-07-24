@@ -142,7 +142,7 @@ class BookApiController extends Controller
             ], Response::HTTP_NOT_FOUND);
         }
 
-        $book->delete(); // Soft delete
+        $book->delete(); 
         return response()->json([
             'success' => true,
             'data' => null,
@@ -194,7 +194,7 @@ class BookApiController extends Controller
             ], Response::HTTP_NOT_FOUND);
         }
 
-        $book->forceDelete(); // Permanently delete
+        $book->forceDelete(); 
         return response()->json([
             'success' => true,
             'data' => null,
